@@ -1,1364 +1,1435 @@
-<html>
-  <head>
-    <link href="sample_files/style.css" rel="stylesheet" type="text/css" />
-
-    <title>南京信息工程大学 学分制教学管理系统</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="sample_files/superfish.css"
-      media="screen"
-    />
-    <script type="text/javascript" src="sample_files/jquery-1.js"></script>
-    <script type="text/javascript" src="sample_files/hoverIntent.js"></script>
-    <script type="text/javascript" src="sample_files/superfish.js"></script>
-    <script type="text/javascript">
-      // initialise plugins
-      jQuery(function () {
-        jQuery("ul.sf-menu").superfish();
-      });
-    </script>
-    <link href="sample_files/kystyle.css" rel="stylesheet" type="text/css" />
-    <style type="text/css">
-      .auto-style1 {
-        width: 1000px;
-        border: 0px solid #f00;
-      }
-      .auto-style2 {
-        float: left;
-        width: 1000px;
-        border: 0px solid #f00;
-      }
-    </style>
-  </head>
-  <body>
-    <table
-      style="background-color: #bdd2ff"
-      width="1000"
-      cellspacing="0"
-      cellpadding="0"
-      border="0"
-      align="center"
+<tbody>
+  <tr>
+    <td class="mtt_bgcolor_grey">节次/星期</td>
+    <td class="mtt_bgcolor_grey" style="width: 13%" data-week="1">星期一</td>
+    <td class="mtt_bgcolor_grey" style="width: 13%" data-week="2">星期二</td>
+    <td class="mtt_bgcolor_grey" style="width: 13%" data-week="3">星期三</td>
+    <td class="mtt_bgcolor_grey highLight" style="width: 13%" data-week="4">
+      星期四
+    </td>
+    <td class="mtt_bgcolor_grey" style="width: 13%" data-week="5">星期五</td>
+    <td class="mtt_bgcolor_grey" style="width: 13%" data-week="6">星期六</td>
+    <td class="mtt_bgcolor_grey" style="width: 13%" data-week="7">星期日</td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="1">第1节<br />08:00~08:45</td>
+    <td
+      data-role="item"
+      data-week="1"
+      data-begin-unit="1"
+      data-end-unit="2"
+      rowspan="2"
     >
-      <tbody>
-        <tr>
-          <td class="auto-style1">
-            <img src="sample_files/title.gif" width="1000" height="106" />
-          </td>
-        </tr>
-        <tr>
-          <td style="background-color: #bdd2ff" class="auto-style1">
-            <ul class="sf-menu sf-js-enabled sf-shadow">
-              <li class="current">
-                <a
-                  href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/KSAPSearch.aspx"
-                  class="sf-with-ul"
-                  >考试查询<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden"></ul>
-              </li>
-              <li class="current">
-                <a href="#" class="sf-with-ul"
-                  >选课管理<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden">
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/d_xuankedetail.aspx"
-                      >我的选课情况</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/tongxiu.aspx"
-                      >通识课程初选</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/xuankeall_buxuan.aspx"
-                      >专业课补选</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/xuankeall_tuixuan.aspx"
-                      >专业课退选</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="current">
-                <a href="#" class="sf-with-ul"
-                  >信息查询<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden">
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/public/newslist.aspx"
-                      >教务公告</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/public/jxcdkebiaoall.aspx"
-                      >教室课表查询</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/czrzcx.aspx"
-                      >操作日志查询</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/public/xiaoli.aspx"
-                      >教学日历查询</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/jcxz.aspx"
-                      >教材选择</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/public/kebiaoall.aspx"
-                      >班级课表查询</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/public/jskebiaoall.aspx"
-                      >教师课程查询</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/mykebiaoall1.aspx"
-                      >我的上课课表</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/public/jxjhcx.aspx"
-                      >教学计划</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="current">
-                <a href="#" class="sf-with-ul"
-                  >成绩查询<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden">
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/chengji.aspx"
-                      >普通课程成绩</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/djkscjcx.aspx"
-                      >等级考试成绩</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/xywcqk.aspx"
-                      >学生学业完成情况查询</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="current">
-                <a href="#" class="sf-with-ul"
-                  >网上报名<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden">
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/webbm2.aspx"
-                      >等级考试报名</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="current">
-                <a
-                  href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/wspj.aspx"
-                  class="sf-with-ul"
-                  >网上评教<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden"></ul>
-              </li>
-              <li class="current">
-                <a
-                  href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/student/xxytjxx.aspx"
-                  class="sf-with-ul"
-                  >信息员建议<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden"></ul>
-              </li>
-              <li class="current">
-                <a href="#" class="sf-with-ul"
-                  >系统相关<span class="sf-sub-indicator"> »</span></a
-                >
-                <ul style="display: none; visibility: hidden">
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/Student/xsjbxx.aspx"
-                      >个人信息</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/public/aboutus.aspx"
-                      >联系我们</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="http://bkxk.nuist.edu.cn/(S(uagzy5c2k5rfh23uy2aqkgtx))/default.aspx?action=quit"
-                      >退出</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td style="background-color: #cfdeff" class="auto-style2">
-            <table width="99%" cellspacing="0" cellpadding="2" border="0">
-              <tbody>
-                <tr>
-                  <td>
-                    <span align="left">
-                      计算机科学与技术(腾讯实验班) 2020 级 Dustella
-                      (1145141919810)同学,您好,欢迎使用学分制教学管理系统</span
-                    >
-                    <span align="right" style="float: right"> </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <form name="form1" method="post" action="kebiaoall.aspx" id="form1">
-      <div>
-        <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-        <input
-          type="hidden"
-          name="__EVENTARGUMENT"
-          id="__EVENTARGUMENT"
-          value=""
-        />
-        <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-        <input
-          type="hidden"
-          name="__VIEWSTATE"
-          id="__VIEWSTATE"
-          value="/wEPDwUKLTQyNTYwMzk2Nw9kFgICAQ9kFggCAw9kFgICAQ9kFgJmD2QWCAIBDxAPFgIeDERhdGFTb3VyY2VJRGRkEBUtEuaVmeW4iOaVmeiCsuWtpumZohLlm73pmYXmlZnogrLlrabpmaIY5paH5a2m6Zmi77yI5paw5Lic5pa577yJDOmbt+S4geWtpumZognpq5jmlZnmiYAJ5a6j5Lyg6YOoEuWkp+awlOeJqeeQhuWtpumZognlrablt6XlpIQP5aSn5a2m5L2T6IKy6YOoCeWbvuS5pummhgnmsJTosaHlj7AS5oiQ5Lq65pWZ6IKy5a2m6ZmiEuW6lOeUqOaKgOacr+WtpumZog/lpKflraboi7Hor63pg6gV6ams5YWL5oCd5Li75LmJ5a2m6ZmiBuWbouWnlBLlpKfmsJTnp5HlrablrabpmaIb546v5aKD56eR5a2m5LiO5bel56iL5a2m6ZmiG+eUteWtkOS4juS/oeaBr+W3peeoi+WtpumZognmloflrabpmaIV5pWw5a2m5LiO57uf6K6h5a2m6ZmiGOiuoeeul+acuuS4jui9r+S7tuWtpumZogzms5XmlL/lrabpmaIS566h55CG5bel56iL5a2m6ZmiEuW6lOeUqOawlOixoeWtpumZohvpgaXmhJ/kuI7mtYvnu5jlt6XnqIvlrabpmaIJ5Lq65q2m6YOoCeaVmeWKoeWkhAzoibrmnK/lrabpmaIe5rC05paH5LiO5rC06LWE5rqQ5bel56iL5a2m6ZmiG+eJqeeQhuS4juWFieeUteW3peeoi+WtpumZohLmtbfmtIvnp5HlrablrabpmaIM6ZW/5pyb5a2m6ZmiEuWcsOeQhuenkeWtpuWtpumZognllYblrabpmaIM5pWZ5Y+R5Lit5b+DG+S6uuaWh+S4juiJuuacr+aVmeiCsuS4reW/gwzpvpnlsbHkuabpmaIh5aSn5rCU5LiO546v5aKD5a6e6aqM5pWZ5a2m5Lit5b+DEuW3peeoi+iuree7g+S4reW/gw/ph5HniZvmuZblm63ljLoP6Ieq5Yqo5YyW5a2m6ZmiFeWMluWtpuS4juadkOaWmeWtpumZohLkurrlt6Xmmbrog73lrabpmaIBIBUtAjM3AjUxAjk5AjIwAjI4AjI5AjI3AjI2AjA4AjE1AjE2AjE3AjE4AjIzAjI0AjI1AjAxAjAyAjAzAjA0AjA1AjA3AjExAjA5AjEwAjEzAjIyAjAwAjE0AjMwAjMxAjMyAjMzAjEyAjIxAjUwAjUyAjM0AjM1Ajk4Ajk3AjM2AjM5AjM4ASAUKwMtZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnFgECFWQCAw8QDxYCHwBkZBAV5QERMTM5NV/lronlhajlt6XnqIs4MTM4NF/lronlhajlt6XnqIvvvIjpm7fnlLXpmLLmiqTnp5HlrabkuI7mioDmnK/mlrnlkJHvvIkOODM2OF/kv53pmanlraYRMTMzOF/mnZDmlpnniannkIYRMTMzOV/otKLliqHnrqHnkIYZMzYwMl/otKLliqHnrqHnkIYo6IGU5Z+5KSUzMzAxX+i0ouWKoeeuoeeQhijkuJPnp5HotbfngrnmnKznp5EpETEzNTBf5rWL57uY5bel56iLGTM2MDVf5rWL57uY5bel56iLKOiBlOWfuSklMzMxMl/mtYvnu5jlt6XnqIso5LiT56eR6LW354K55pys56eRKRoxMzQxX+a1i+aOp+aKgOacr+S4juS7quWZqC84MzEyX+a1i+aOp+aKgOacr+S4juS7quWZqO+8iOW1jOWFpeW8j+WfueWFu++8iRExMzAxX+Wkp+awlOenkeWtph84MzU5X+Wkp+awlOenkeWtpijlpKfmsJTnjq/looMpHzgzNThf5aSn5rCU56eR5a2mKOWkp+awlOaOoua1iykfODM1N1/lpKfmsJTnp5HlraYo5aSn5rCU54mp55CGKRw4MzU2X+Wkp+awlOenkeWtpijmsJTosaHlraYpHzgzNjBf5aSn5rCU56eR5a2mKOawtOaWh+awlOixoSkmMTM3M1/lpKfmsJTnp5HlrabvvIjplb/mnJvlrp7pqoznj63vvIkpMTM1N1/lpKfmsJTnp5HlrabvvIjlpKfmsJTnjq/looPmlrnlkJHvvIkpMTMxOV/lpKfmsJTnp5HlrabvvIjlpKfmsJTmjqLmtYvmlrnlkJHvvIkpMTM2N1/lpKfmsJTnp5HlrabvvIjlpKfmsJTniannkIbmlrnlkJHvvIk4MTMyMF/lpKfmsJTnp5HlrabvvIjlpKfmsJTniannkIbkuI7lpKfmsJTnjq/looPmlrnlkJHvvIksMTM4MF/lpKfmsJTnp5HlrabvvIjlm73pmYXor77nqIvlrp7pqoznj63vvIkmMTM2OF/lpKfmsJTnp5HlrabvvIjmsJTlgJnlrabmlrnlkJHvvIkpMTM0OV/lpKfmsJTnp5HlrabvvIjmsJTlgJnotYTmupDmlrnlkJHvvIkvMTM0OF/lpKfmsJTnp5HlrabvvIjkurrlt6XlvbHlk43lpKnmsJTmlrnlkJHvvIkgMTM3Ml/lpKfmsJTnp5HlrabvvIjmlbDnkIbnj63vvIkpMTM3Nl/lpKfmsJTnp5HlrabvvIjmsLTmlofmsJTosaHmlrnlkJHvvIkpODMxMV/lpKfmsJTnp5HlrabvvIjkuK3lpJblkIjkvZzlip7lrabvvIkpMTM5N1/lpKfmsJTnp5HlrabvvIjkuK3lpJblkIjkvZzlip7lrabvvIkaODM3NV/lpKfmsJTnp5Hlrabmi5TlsJbnj60UODMzMF/lpKfmsJTnp5HlrabnsbsaODMxN1/lpKfmsJTnp5Hlrablrp7pqoznj60dODM3OF/lpKfmlbDmja7nrqHnkIbkuI7lupTnlKgZODM2OV/lnLDnkIbnp5HlraYo5biI6IyDKRQ4MzY3X+WcsOeQhuenkeWtpuexux04MzM1X+WcsOeQhuepuumXtOS/oeaBr+W3peeoixcxMzg5X+WcsOeQhuS/oeaBr+enkeWtph8zNjIwX+WcsOeQhuS/oeaBr+enkeWtpijogZTln7kpPTgzNDhf5Zyw55CG5L+h5oGv56eR5a2mKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuykrODM3MF/lnLDnkIbkv6Hmga/np5HlraYo5Lit5aSW5ZCI5L2c5Yqe5a2mKRcxMzE2X+WcsOeQhuS/oeaBr+ezu+e7n0E4MzMzX+WcsOeQhuS4jui1hOa6kOexu++8iOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFu++8iSAxMzkzX+eUteawlOW3peeoi+WPiuWFtuiHquWKqOWMligzMzE4X+eUteawlOW3peeoi+WPiuWFtuiHquWKqOWMlijljZXmi5spKDM2MDZf55S15rCU5bel56iL5Y+K5YW26Ieq5Yqo5YyWKOiBlOWfuSk0MzMwMl/nlLXmsJTlt6XnqIvlj4rlhbboh6rliqjljJYo5LiT56eR6LW354K55pys56eRKS84MzM0X+eUteawlOW3peeoi+WPiuWFtuiHquWKqOWMlu+8iOS4k+i9rOacrO+8iR0xMzQwX+eUteawlOW3peeoi+S4juiHquWKqOWMli8xMzU2X+eUteawlOS/oeaBr+exu++8iOiuoeeul+acuuW6lOeUqOaWueWQke+8iRoxMzIxX+eUteWtkOenkeWtpuS4juaKgOacryIzNjA5X+eUteWtkOenkeWtpuS4juaKgOacryjogZTln7kpQDgzNjNf55S15a2Q56eR5a2m5LiO5oqA5pyvKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuykXMTMwNV/nlLXlrZDkv6Hmga/lt6XnqIsfMzMxOV/nlLXlrZDkv6Hmga/lt6XnqIso5Y2V5oubKSUxNzA1X+eUteWtkOS/oeaBr+W3peeoiyjnrKzkuozlrabkvY0pHzM2MTBf55S15a2Q5L+h5oGv5bel56iLKOiBlOWfuSk9ODM2Ml/nlLXlrZDkv6Hmga/lt6XnqIso5LiO5Lit5Zu956eR5a2m6Zmi5aSn5a2m6IGU5ZCI5Z+55YW7KSszMzAzX+eUteWtkOS/oeaBr+W3peeoiyjkuJPnp5HotbfngrnmnKznp5EpODEzMThf55S15a2Q5L+h5oGv5bel56iL77yI6Ziy6Zu35LiO55S156OB5YW85a655pa55ZCR77yJJjgzMDdf55S15a2Q5L+h5oGv5bel56iL77yI5LiT6L2s5pys77yJKDM2MTFf55S15a2Q5L+h5oGv56eR5a2m5LiO5oqA5pyvKOiBlOWfuSkUODMyN1/nlLXlrZDkv6Hmga/nsbs+ODMzMl/nlLXlrZDkv6Hmga/nsbvvvIjkuI7kuK3lm73np5HlrabpmaLlpKflrabogZTlkIjln7nlhbvvvIkLMTM2MV/liqjnlLsfMzMxN1/liqjnlLso5LiT56eR6LW354K55pys56eRKRExMzY0X+WvueWkluaxieivrSkxMzU0X+WvueWkluaxieivre+8iOaxieaXpeWPjOivreaWueWQke+8iSkxMzUzX+WvueWkluaxieivre+8iOaxieiLseWPjOivreaWueWQke+8iQsxMzI4X+azleWtphMzNjAxX+azleWtpijogZTln7kpNTEzNjVf5rOV5a2m77yI57uP5rWO5rOV77yJ77yI5Zu96ZmF6K++56iL5a6e6aqM54+t77yJIzgzMjJf5rOV5a2m77yI5Lit5aSW5ZCI5L2c5Yqe5a2m77yJCzEzNzRf57+76K+RIDgzMzZf6Ziy54G+5YeP54G+56eR5a2m5LiO5bel56iLHTEzODVf57uZ5o6S5rC056eR5a2m5LiO5bel56iLFzEzNjJf57uZ5rC05o6S5rC05bel56iLFDgzMjZf5bel5ZWG566h55CG57G7FzEzMjlf5YWs5YWx5LqL5Lia566h55CGIDEzODhf5YWJ55S15L+h5oGv56eR5a2m5LiO5bel56iLHTEzNTlf5YWJ5L+h5oGv56eR5a2m5LiO5oqA5pyvGjEzMzBf5Zu96ZmF57uP5rWO5LiO6LS45piTMjEzOTlf5Zu96ZmF57uP5rWO5LiO6LS45piT77yI5Lit5aSW5ZCI5L2c5Yqe5a2m77yJMjgzMDZf5Zu96ZmF57uP5rWO5LiO6LS45piT77yI5Lit5aSW5ZCI5L2c5Yqe5a2m77yJODY5MDZf5Zu96ZmF57uP5rWO5LiO6LS45piT77yI5Lit5aSW5ZCI5L2c5Yqe5a2m6IGU5Z+577yJETgzMDFf5rW35rSL5oqA5pyvETEzMzFf5rW35rSL56eR5a2mNzgzNzJf5rW35rSL56eR5a2mKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuyk4MTM4Ml/mtbfmtIvnp5HlrabvvIjmtbfmtIvmsJTosaHkuI7niannkIbmtbfmtIvmlrnlkJHvvIkUODM0NV/mtbfmtIvnp5HlrabnsbsaODM3NF/mtbfmtIvotYTmupDkuI7njq/looMXMTM4Nl/msYnor63lm73pmYXmlZnogrIrMTM5Ml/msYnor63lm73pmYXmlZnogrIo5rGJ6Iux5Y+M6K+t5pa55ZCRKRQxMzEzX+axieivreiogOaWh+WtpiwxMzU1X+axieivreiogOaWh+Wtpu+8iOmrmOe6p+aWh+enmOaWueWQke+8iSA4MzQwX+axieivreiogOaWh+Wtpu+8iOW4iOiMg++8iTUxMzYwX+axieivreiogOaWh+Wtpu+8iOaWh+WMluWIm+aEj+S4juiuvuiuoeaWueWQke+8iRM4MzgxX+WMluWtpijluIjojIMpETEzNDNf546v5aKD5bel56iLGTM2MTJf546v5aKD5bel56iLKOiBlOWfuSk3ODM1NV/njq/looPlt6XnqIso5LiO5Lit5Zu956eR5a2m6Zmi5aSn5a2m6IGU5ZCI5Z+55YW7KSUzMzE0X+eOr+Wig+W3peeoiyjkuJPnp5HotbfngrnmnKznp5EpLDEzNzFf546v5aKD5bel56iL77yI5Zu96ZmF6K++56iL5a6e6aqM54+t77yJKTgzMDlf546v5aKD5bel56iL77yI5Lit5aSW5ZCI5L2c5Yqe5a2m77yJETEzMDRf546v5aKD56eR5a2mNzgzNTRf546v5aKD56eR5a2mKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuyklMzMxNV/njq/looPnp5HlraYo5LiT56eR6LW354K55pys56eRKSIzNjEzX+eOr+Wig+enkeWtpuS4juW3peeoiyjogZTln7kpHTgzMjhf546v5aKD56eR5a2m5LiO5bel56iL57G7ETgzNzlf546v5aKD6K6+6K6hFzgzMzhf546v5aKD55Sf5oCB5bel56iLPjgzMzFf546v5aKD55Sf5oCB57G777yI5LiO5Lit5Zu956eR5a2m6Zmi5aSn5a2m6IGU5ZCI5Z+55YW777yJDjEzMTJf5Lya6K6h5a2mIjMzMDRf5Lya6K6h5a2mKOS4k+enkei1t+eCueacrOenkSkUODMyNF/mnLrlmajkurrlt6XnqIsXODM3Nl/mnLrmorDnlLXlrZDlt6XnqIsdMTMwOF/orqHnrpfmnLrnp5HlrabkuI7mioDmnK8rODM3M1/orqHnrpfmnLrnp5HlrabkuI7mioDmnK8o56ys5LqM5a2m5L2NKSUzNjE3X+iuoeeul+acuuenkeWtpuS4juaKgOacryjogZTln7kpLjgzODRf6K6h566X5py656eR5a2m5LiO5oqA5pyvKOiFvuiur+WunumqjOePrSkxMzMwNV/orqHnrpfmnLrnp5HlrabkuI7mioDmnK8o5LiT56eR6LW354K55pys56eRKTI4MzAzX+iuoeeul+acuuenkeWtpuS4juaKgOacr++8iOW1jOWFpeW8j+WfueWFu++8iSk4MzQ0X+iuoeeul+acuuenkeWtpuS4juaKgOacr++8iOW4iOiMg++8iRE4MzI5X+iuoeeul+acuuexux04MzE5X+iuoeeul+acuui9r+S7tuWunumqjOePrRExMzYzX+mHkeiejeW3peeoixkzNjA0X+mHkeiejeW3peeoiyjogZTln7kpJTMzMDZf6YeR6J6N5bel56iLKOS4k+enkei1t+eCueacrOenkSkaODMyMF/nu4/mtY7nrqHnkIblrp7pqoznj60UODMzOV/nu4/mtY7nu5/orqHlraYgMTM0NV/pm7fnlLXpmLLmiqTnp5HlrabkuI7mioDmnK8WODM4MF/nvo7mnK/lraYo5biI6IyDKRoxMzQyX+WGnOS4mui1hOa6kOS4jueOr+Wig0A4MzUyX+WGnOS4mui1hOa6kOS4jueOr+WigyjkuI7kuK3lm73np5HlrabpmaLlpKflrabogZTlkIjln7nlhbspGjgzODJf5rCU6LGh5oqA5pyv5LiO5bel56iLETgzNDZf5Lq65bel5pm66IO9FzEzMzJf5Lq65Yqb6LWE5rqQ566h55CGIDEzOTRf5Lq65paH5Zyw55CG5LiO5Z+O5Lmh6KeE5YiSRjgzNDlf5Lq65paH5Zyw55CG5LiO5Z+O5Lmh6KeE5YiSKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuykLMTMyMl/ml6Xor60RMTM0NF/ova/ku7blt6XnqIsZMzYxOF/ova/ku7blt6XnqIso6IGU5Z+5KSUzMzA3X+i9r+S7tuW3peeoiyjkuJPnp5HotbfngrnmnKznp5EpIzEzNThf6L2v5Lu25bel56iL77yI5Yqo55S75pa55ZCR77yJLDEzNjZf6L2v5Lu25bel56iL77yI5Zu96ZmF6K++56iL5a6e6aqM54+t77yJJjEzOThf6L2v5Lu25bel56iL77yI5bWM5YWl5byP5Z+55YW777yJKTgzMDJf6L2v5Lu25bel56iL77yI5Lit5aSW5ZCI5L2c5Yqe5a2m77yJIDgzMDhf6L2v5Lu25bel56iL77yI5LiT6L2s5pys77yJDjEzMTdf55Sf5oCB5a2mNDgzNTNf55Sf5oCB5a2mKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuykRMTMzM1/luILlnLrokKXplIAZMzYwM1/luILlnLrokKXplIAo6IGU5Z+5KSM4MzI1X+aVsOaNruenkeWtpuS4juWkp+aVsOaNruaKgOacryszNjA3X+aVsOaNruenkeWtpuS4juWkp+aVsOaNruaKgOacryjogZTln7kpNzgzNzFf5pWw5o2u56eR5a2m5LiO5aSn5pWw5o2u5oqA5pyvKOS4reWkluWQiOS9nOWKnuWtpik4ODMzN1/mlbDmja7np5HlrabkuI7lpKfmlbDmja7mioDmnK/vvIjltYzlhaXlvI/ln7nlhbvvvIlBNjk3MV/mlbDmja7np5HlrabkuI7lpKfmlbDmja7mioDmnK/vvIjkuK3lpJblkIjkvZzlip7lrabogZTln7nvvIkaMTMyM1/mlbDlrabkuI7lupTnlKjmlbDlraYmODM0Ml/mlbDlrabkuI7lupTnlKjmlbDlrabvvIjluIjojIPvvIkyODMxMF/mlbDlrabkuI7lupTnlKjmlbDlrabvvIjkuK3lpJblkIjkvZzlip7lrabvvIkXMTM3OV/mlbDlrZflqpLkvZPoibrmnK8yMTM4MV/mlbDlrZflqpLkvZPoibrmnK/vvIjlm73pmYXor77nqIvlrp7pqoznj63vvIkyMTM2OV/mlbDlrZflqpLkvZPoibrmnK/vvIjnvZHnu5zkuI7lqpLkvZPmlrnlkJHvvIk1MTM3MF/mlbDlrZflqpLkvZPoibrmnK/vvIjmuLjmiI/oibrmnK/orr7orqHmlrnlkJHvvIkvMTM4M1/mlbDlrZflqpLkvZPoibrmnK/vvIjkuK3lpJblkIjkvZzlip7lrabvvIkaODM3N1/msLTliKnnp5HlrabkuI7lt6XnqIsdODMyM1/msLTmlofkuI7msLTotYTmupDlt6XnqIsxMzMxNl/msLTmlofkuI7msLTotYTmupDlt6XnqIso5LiT56eR6LW354K55pys56eRKRExMzM0X+mAmuS/oeW3peeoiyI4MzgzX+mAmuS/oeW3peeoiyjljY7kuLrlrp7pqoznj60pNzgzNjRf6YCa5L+h5bel56iLKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuyklMzMwOF/pgJrkv6Hlt6XnqIso5LiT56eR6LW354K55pys56eRKQ4xMzE1X+e7n+iuoeWtphExMzQ2X+e9kee7nOW3peeoixkzNjE0X+e9kee7nOW3peeoiyjogZTln7kpJTMzMDlf572R57uc5bel56iLKOS4k+enkei1t+eCueacrOenkSkmODMxNV/nvZHnu5zlt6XnqIvvvIjltYzlhaXlvI/ln7nlhbvvvIkdODM0N1/lvq7nlLXlrZDnp5HlrabkuI7lt6XnqIslMzYwOF/lvq7nlLXlrZDnp5HlrabkuI7lt6XnqIso6IGU5Z+5KQ4xMzA2X+eJqeeQhuWtpho4MzQzX+eJqeeQhuWtpu+8iOW4iOiMg++8iRQxMzc1X+eJqeiBlOe9keW3peeoixwzNjE1X+eJqeiBlOe9keW3peeoiyjogZTln7kpKDMzMTBf54mp6IGU572R5bel56iLKOS4k+enkei1t+eCueacrOenkSkpODMwNF/nianogZTnvZHlt6XnqIvvvIjltYzlhaXlvI/ln7nlhbvvvIkRMTM0N1/nianmtYHnrqHnkIYaMjIyMl/mlrDmlZnluIjln7norq3kuJPkuJoRODMxNF/kv6Hmga/lronlhagZMzYxNl/kv6Hmga/lronlhago6IGU5Z+5KRExMzA5X+S/oeaBr+W3peeoizc4MzY1X+S/oeaBr+W3peeoiyjkuI7kuK3lm73np5HlrabpmaLlpKflrabogZTlkIjln7nlhbspJjEzMjRf5L+h5oGv5bel56iL77yI572R57uc5LiO6YCa5L+h77yJKTEzMjVf5L+h5oGv5bel56iL77yI57O757uf5bel56iL5pa55ZCR77yJIDEzMDdf5L+h5oGv566h55CG5LiO5L+h5oGv57O757ufNTgzMjFf5L+h5oGv566h55CG5LiO5L+h5oGv57O757uf77yI5bWM5YWl5byP5Z+55YW777yJGjgzMThf5L+h5oGv5o6n5Yi25a6e6aqM54+tGjEzMTRf5L+h5oGv5LiO6K6h566X56eR5a2mNTEzNzhf5L+h5oGv5LiO6K6h566X56eR5a2m77yI5Zu96ZmF6K++56iL5a6e6aqM54+t77yJLzgzMTZf5L+h5oGv5LiO6K6h566X56eR5a2m77yI5bWM5YWl5byP5Z+55YW777yJETEzMTFf6KGM5pS/566h55CGCzAwMDBf5LyR5a2mGjEzMzVf6YGl5oSf56eR5a2m5LiO5oqA5pyvKzgzNjZf6YGl5oSf56eR5a2m5LiO5oqA5pyvKOWbvemZheWunumqjOePrSlAODM1MF/pgaXmhJ/np5HlrabkuI7mioDmnK8o5LiO5Lit5Zu956eR5a2m6Zmi5aSn5a2m6IGU5ZCI5Z+55YW7KS4zMzEzX+mBpeaEn+enkeWtpuS4juaKgOacryjkuJPnp5HotbfngrnmnKznp5EpFDEzOTZf6Im65pyv5LiO56eR5oqACzEzMTBf6Iux6K+tIzEzNTFf6Iux6K+t77yI5Zu96ZmF5ZWG5Yqh5pa55ZCR77yJFzgzNDFf6Iux6K+t77yI5biI6IyD77yJIzEzNTJf6Iux6K+t77yI5a6e55So57+76K+R5pa55ZCR77yJETEzMzdf5bqU55So5YyW5a2mGTM2MTlf5bqU55So5YyW5a2mKOiBlOWfuSkpMTM3N1/lupTnlKjljJblrabvvIjkuK3lpJblkIjkvZzlip7lrabvvIkpODMwNV/lupTnlKjljJblrabvvIjkuK3lpJblkIjkvZzlip7lrabvvIkUMTMwMl/lupTnlKjmsJTosaHlraYiODM2MV/lupTnlKjmsJTosaHlraYo5YWs5YWx5rCU6LGhKTIxMzkxX+W6lOeUqOawlOixoeWtpu+8iOWFrOWFseawlOixoeacjeWKoeaWueWQke+8iRQxMzg3X+W6lOeUqOe7n+iuoeWtphQxMzI2X+W6lOeUqOeJqeeQhuWtphcxMTExX+mHjeaWsOWtpuS5oOS4k+S4miYxMzAzX+i1hOa6kOeOr+Wig+S4juWfjuS5oeinhOWIkueuoeeQhjgxMzI3X+i1hOa6kOeOr+Wig+S4juWfjuS5oeinhOWIkueuoeeQhu+8iOa1t+a0i+a7qea2gu+8iQ4xMzM2X+iHquWKqOWMliIzMzExX+iHquWKqOWMlijkuJPnp5HotbfngrnmnKznp5EpHTgzMTNf6Ieq5Yqo5YyW77yI5LiT6L2s5pys77yJIDEzOTBf6Ieq54S25Zyw55CG5LiO6LWE5rqQ546v5aKDRjgzNTFf6Ieq54S25Zyw55CG5LiO6LWE5rqQ546v5aKDKOS4juS4reWbveenkeWtpumZouWkp+WtpuiBlOWQiOWfueWFuykBIBXlAQQxMzk1BDEzODQEODM2OAQxMzM4BDEzMzkEMzYwMgQzMzAxBDEzNTAEMzYwNQQzMzEyBDEzNDEEODMxMgQxMzAxBDgzNTkEODM1OAQ4MzU3BDgzNTYEODM2MAQxMzczBDEzNTcEMTMxOQQxMzY3BDEzMjAEMTM4MAQxMzY4BDEzNDkEMTM0OAQxMzcyBDEzNzYEODMxMQQxMzk3BDgzNzUEODMzMAQ4MzE3BDgzNzgEODM2OQQ4MzY3BDgzMzUEMTM4OQQzNjIwBDgzNDgEODM3MAQxMzE2BDgzMzMEMTM5MwQzMzE4BDM2MDYEMzMwMgQ4MzM0BDEzNDAEMTM1NgQxMzIxBDM2MDkEODM2MwQxMzA1BDMzMTkEMTcwNQQzNjEwBDgzNjIEMzMwMwQxMzE4BDgzMDcEMzYxMQQ4MzI3BDgzMzIEMTM2MQQzMzE3BDEzNjQEMTM1NAQxMzUzBDEzMjgEMzYwMQQxMzY1BDgzMjIEMTM3NAQ4MzM2BDEzODUEMTM2MgQ4MzI2BDEzMjkEMTM4OAQxMzU5BDEzMzAEMTM5OQQ4MzA2BDY5MDYEODMwMQQxMzMxBDgzNzIEMTM4MgQ4MzQ1BDgzNzQEMTM4NgQxMzkyBDEzMTMEMTM1NQQ4MzQwBDEzNjAEODM4MQQxMzQzBDM2MTIEODM1NQQzMzE0BDEzNzEEODMwOQQxMzA0BDgzNTQEMzMxNQQzNjEzBDgzMjgEODM3OQQ4MzM4BDgzMzEEMTMxMgQzMzA0BDgzMjQEODM3NgQxMzA4BDgzNzMEMzYxNwQ4Mzg0BDMzMDUEODMwMwQ4MzQ0BDgzMjkEODMxOQQxMzYzBDM2MDQEMzMwNgQ4MzIwBDgzMzkEMTM0NQQ4MzgwBDEzNDIEODM1MgQ4MzgyBDgzNDYEMTMzMgQxMzk0BDgzNDkEMTMyMgQxMzQ0BDM2MTgEMzMwNwQxMzU4BDEzNjYEMTM5OAQ4MzAyBDgzMDgEMTMxNwQ4MzUzBDEzMzMEMzYwMwQ4MzI1BDM2MDcEODM3MQQ4MzM3BDY5NzEEMTMyMwQ4MzQyBDgzMTAEMTM3OQQxMzgxBDEzNjkEMTM3MAQxMzgzBDgzNzcEODMyMwQzMzE2BDEzMzQEODM4MwQ4MzY0BDMzMDgEMTMxNQQxMzQ2BDM2MTQEMzMwOQQ4MzE1BDgzNDcE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"
-        />
-      </div>
-
-      <script type="text/javascript">
-        //<![CDATA[
-        var theForm = document.forms["form1"];
-        if (!theForm) {
-          theForm = document.form1;
-        }
-        function __doPostBack(eventTarget, eventArgument) {
-          if (!theForm.onsubmit || theForm.onsubmit() != false) {
-            theForm.__EVENTTARGET.value = eventTarget;
-            theForm.__EVENTARGUMENT.value = eventArgument;
-            theForm.submit();
-          }
-        }
-        //]]>
-      </script>
-
-      <script src="sample_files/WebResource.js" type="text/javascript"></script>
-
-      <script
-        src="sample_files/ScriptResource_002.js"
-        type="text/javascript"
-      ></script>
-      <script type="text/javascript">
-        //<![CDATA[
-        if (typeof Sys === "undefined")
-          throw new Error("ASP.NET Ajax 客户端框架未能加载。");
-        //]]>
-      </script>
-
-      <script
-        src="sample_files/ScriptResource.js"
-        type="text/javascript"
-      ></script>
-      <div>
-        <input
-          type="hidden"
-          name="__VIEWSTATEGENERATOR"
-          id="__VIEWSTATEGENERATOR"
-          value="604BAD13"
-        />
-        <input
-          type="hidden"
-          name="__EVENTVALIDATION"
-          id="__EVENTVALIDATION"
-          value="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"
-        />
-      </div>
-      <script type="text/javascript">
-        //<![CDATA[
-        Sys.WebForms.PageRequestManager._initialize(
-          "ScriptManager1",
-          "form1",
-          ["tStudentJZ1$UpdatePanel1", ""],
-          [],
-          [],
-          90,
-          ""
-        );
-        //]]>
-      </script>
-
-      <div class="box">
-        <div class="box_title">&nbsp;班级课表查询</div>
-        <div class="box_content">
-          <table
-            style="text-align: left"
-            width="100%"
-            cellspacing="1"
-            cellpadding="0"
-            border="0"
-            bgcolor="dfdfdf"
-          >
-            <tbody>
-              <tr>
-                <td class="personaddbg1" colspan="7">
-                  <link
-                    href="sample_files/style.css"
-                    rel="stylesheet"
-                    type="text/css"
-                  />
-                  <link
-                    href="sample_files/kystyle.css"
-                    rel="stylesheet"
-                    type="text/css"
-                  />
-
-                  <div id="StudentJZ1_UpdatePanel1">
-                    <table width="800" align="left">
-                      <tbody>
-                        <tr>
-                          <td style="width: 60px" class="personaddbg1">系部</td>
-                          <td style="width: 100px" bgcolor="#ffffff">
-                            <select
-                              name="StudentJZ1$DropDownListXY"
-                              onchange="javascript:setTimeout('__doPostBack(\'StudentJZ1$DropDownListXY\',\'\')', 0)"
-                              id="StudentJZ1_DropDownListXY"
-                              style="width: 150px"
-                            >
-                              <option value="37">教师教育学院</option>
-                              <option value="51">国际教育学院</option>
-                              <option value="99">文学院（新东方）</option>
-                              <option value="20">雷丁学院</option>
-                              <option value="28">高教所</option>
-                              <option value="29">宣传部</option>
-                              <option value="27">大气物理学院</option>
-                              <option value="26">学工处</option>
-                              <option value="08">大学体育部</option>
-                              <option value="15">图书馆</option>
-                              <option value="16">气象台</option>
-                              <option value="17">成人教育学院</option>
-                              <option value="18">应用技术学院</option>
-                              <option value="23">大学英语部</option>
-                              <option value="24">马克思主义学院</option>
-                              <option value="25">团委</option>
-                              <option value="01">大气科学学院</option>
-                              <option value="02">环境科学与工程学院</option>
-                              <option value="03">电子与信息工程学院</option>
-                              <option value="04">文学院</option>
-                              <option value="05">数学与统计学院</option>
-                              <option selected="selected" value="07">
-                                计算机与软件学院
-                              </option>
-                              <option value="11">法政学院</option>
-                              <option value="09">管理工程学院</option>
-                              <option value="10">应用气象学院</option>
-                              <option value="13">遥感与测绘工程学院</option>
-                              <option value="22">人武部</option>
-                              <option value="00">教务处</option>
-                              <option value="14">艺术学院</option>
-                              <option value="30">水文与水资源工程学院</option>
-                              <option value="31">物理与光电工程学院</option>
-                              <option value="32">海洋科学学院</option>
-                              <option value="33">长望学院</option>
-                              <option value="12">地理科学学院</option>
-                              <option value="21">商学院</option>
-                              <option value="50">教发中心</option>
-                              <option value="52">人文与艺术教育中心</option>
-                              <option value="34">龙山书院</option>
-                              <option value="35">大气与环境实验教学中心</option>
-                              <option value="98">工程训练中心</option>
-                              <option value="97">金牛湖园区</option>
-                              <option value="36">自动化学院</option>
-                              <option value="39">化学与材料学院</option>
-                              <option value="38">人工智能学院</option>
-                              <option value=" "></option>
-                            </select>
-                          </td>
-                          <td style="width: 60px" class="personaddbg1">专业</td>
-                          <td style="width: 100px" bgcolor="#ffffff">
-                            <select
-                              name="StudentJZ1$DropDownListZYMC"
-                              onchange="javascript:setTimeout('__doPostBack(\'StudentJZ1$DropDownListZYMC\',\'\')', 0)"
-                              id="StudentJZ1_DropDownListZYMC"
-                              style="width: 200px"
-                            >
-                              <option value="1395">1395_安全工程</option>
-                              <option value="1384">
-                                1384_安全工程（雷电防护科学与技术方向）
-                              </option>
-                              <option value="8368">8368_保险学</option>
-                              <option value="1338">1338_材料物理</option>
-                              <option value="1339">1339_财务管理</option>
-                              <option value="3602">3602_财务管理(联培)</option>
-                              <option value="3301">
-                                3301_财务管理(专科起点本科)
-                              </option>
-                              <option value="1350">1350_测绘工程</option>
-                              <option value="3605">3605_测绘工程(联培)</option>
-                              <option value="3312">
-                                3312_测绘工程(专科起点本科)
-                              </option>
-                              <option value="1341">1341_测控技术与仪器</option>
-                              <option value="8312">
-                                8312_测控技术与仪器（嵌入式培养）
-                              </option>
-                              <option value="1301">1301_大气科学</option>
-                              <option value="8359">
-                                8359_大气科学(大气环境)
-                              </option>
-                              <option value="8358">
-                                8358_大气科学(大气探测)
-                              </option>
-                              <option value="8357">
-                                8357_大气科学(大气物理)
-                              </option>
-                              <option value="8356">
-                                8356_大气科学(气象学)
-                              </option>
-                              <option value="8360">
-                                8360_大气科学(水文气象)
-                              </option>
-                              <option value="1373">
-                                1373_大气科学（长望实验班）
-                              </option>
-                              <option value="1357">
-                                1357_大气科学（大气环境方向）
-                              </option>
-                              <option value="1319">
-                                1319_大气科学（大气探测方向）
-                              </option>
-                              <option value="1367">
-                                1367_大气科学（大气物理方向）
-                              </option>
-                              <option value="1320">
-                                1320_大气科学（大气物理与大气环境方向）
-                              </option>
-                              <option value="1380">
-                                1380_大气科学（国际课程实验班）
-                              </option>
-                              <option value="1368">
-                                1368_大气科学（气候学方向）
-                              </option>
-                              <option value="1349">
-                                1349_大气科学（气候资源方向）
-                              </option>
-                              <option value="1348">
-                                1348_大气科学（人工影响天气方向）
-                              </option>
-                              <option value="1372">
-                                1372_大气科学（数理班）
-                              </option>
-                              <option value="1376">
-                                1376_大气科学（水文气象方向）
-                              </option>
-                              <option value="8311">
-                                8311_大气科学（中外合作办学）
-                              </option>
-                              <option value="1397">
-                                1397_大气科学（中外合作办学）
-                              </option>
-                              <option value="8375">8375_大气科学拔尖班</option>
-                              <option value="8330">8330_大气科学类</option>
-                              <option value="8317">8317_大气科学实验班</option>
-                              <option value="8378">
-                                8378_大数据管理与应用
-                              </option>
-                              <option value="8369">8369_地理科学(师范)</option>
-                              <option value="8367">8367_地理科学类</option>
-                              <option value="8335">
-                                8335_地理空间信息工程
-                              </option>
-                              <option value="1389">1389_地理信息科学</option>
-                              <option value="3620">
-                                3620_地理信息科学(联培)
-                              </option>
-                              <option value="8348">
-                                8348_地理信息科学(与中国科学院大学联合培养)
-                              </option>
-                              <option value="8370">
-                                8370_地理信息科学(中外合作办学)
-                              </option>
-                              <option value="1316">1316_地理信息系统</option>
-                              <option value="8333">
-                                8333_地理与资源类（与中国科学院大学联合培养）
-                              </option>
-                              <option value="1393">
-                                1393_电气工程及其自动化
-                              </option>
-                              <option value="3318">
-                                3318_电气工程及其自动化(单招)
-                              </option>
-                              <option value="3606">
-                                3606_电气工程及其自动化(联培)
-                              </option>
-                              <option value="3302">
-                                3302_电气工程及其自动化(专科起点本科)
-                              </option>
-                              <option value="8334">
-                                8334_电气工程及其自动化（专转本）
-                              </option>
-                              <option value="1340">
-                                1340_电气工程与自动化
-                              </option>
-                              <option value="1356">
-                                1356_电气信息类（计算机应用方向）
-                              </option>
-                              <option value="1321">1321_电子科学与技术</option>
-                              <option value="3609">
-                                3609_电子科学与技术(联培)
-                              </option>
-                              <option value="8363">
-                                8363_电子科学与技术(与中国科学院大学联合培养)
-                              </option>
-                              <option value="1305">1305_电子信息工程</option>
-                              <option value="3319">
-                                3319_电子信息工程(单招)
-                              </option>
-                              <option value="1705">
-                                1705_电子信息工程(第二学位)
-                              </option>
-                              <option value="3610">
-                                3610_电子信息工程(联培)
-                              </option>
-                              <option value="8362">
-                                8362_电子信息工程(与中国科学院大学联合培养)
-                              </option>
-                              <option value="3303">
-                                3303_电子信息工程(专科起点本科)
-                              </option>
-                              <option value="1318">
-                                1318_电子信息工程（防雷与电磁兼容方向）
-                              </option>
-                              <option value="8307">
-                                8307_电子信息工程（专转本）
-                              </option>
-                              <option value="3611">
-                                3611_电子信息科学与技术(联培)
-                              </option>
-                              <option value="8327">8327_电子信息类</option>
-                              <option value="8332">
-                                8332_电子信息类（与中国科学院大学联合培养）
-                              </option>
-                              <option value="1361">1361_动画</option>
-                              <option value="3317">
-                                3317_动画(专科起点本科)
-                              </option>
-                              <option value="1364">1364_对外汉语</option>
-                              <option value="1354">
-                                1354_对外汉语（汉日双语方向）
-                              </option>
-                              <option value="1353">
-                                1353_对外汉语（汉英双语方向）
-                              </option>
-                              <option value="1328">1328_法学</option>
-                              <option value="3601">3601_法学(联培)</option>
-                              <option value="1365">
-                                1365_法学（经济法）（国际课程实验班）
-                              </option>
-                              <option value="8322">
-                                8322_法学（中外合作办学）
-                              </option>
-                              <option value="1374">1374_翻译</option>
-                              <option value="8336">
-                                8336_防灾减灾科学与工程
-                              </option>
-                              <option value="1385">
-                                1385_给排水科学与工程
-                              </option>
-                              <option value="1362">1362_给水排水工程</option>
-                              <option value="8326">8326_工商管理类</option>
-                              <option value="1329">1329_公共事业管理</option>
-                              <option value="1388">
-                                1388_光电信息科学与工程
-                              </option>
-                              <option value="1359">
-                                1359_光信息科学与技术
-                              </option>
-                              <option value="1330">1330_国际经济与贸易</option>
-                              <option value="1399">
-                                1399_国际经济与贸易（中外合作办学）
-                              </option>
-                              <option value="8306">
-                                8306_国际经济与贸易（中外合作办学）
-                              </option>
-                              <option value="6906">
-                                6906_国际经济与贸易（中外合作办学联培）
-                              </option>
-                              <option value="8301">8301_海洋技术</option>
-                              <option value="1331">1331_海洋科学</option>
-                              <option value="8372">
-                                8372_海洋科学(与中国科学院大学联合培养)
-                              </option>
-                              <option value="1382">
-                                1382_海洋科学（海洋气象与物理海洋方向）
-                              </option>
-                              <option value="8345">8345_海洋科学类</option>
-                              <option value="8374">8374_海洋资源与环境</option>
-                              <option value="1386">1386_汉语国际教育</option>
-                              <option value="1392">
-                                1392_汉语国际教育(汉英双语方向)
-                              </option>
-                              <option value="1313">1313_汉语言文学</option>
-                              <option value="1355">
-                                1355_汉语言文学（高级文秘方向）
-                              </option>
-                              <option value="8340">
-                                8340_汉语言文学（师范）
-                              </option>
-                              <option value="1360">
-                                1360_汉语言文学（文化创意与设计方向）
-                              </option>
-                              <option value="8381">8381_化学(师范)</option>
-                              <option value="1343">1343_环境工程</option>
-                              <option value="3612">3612_环境工程(联培)</option>
-                              <option value="8355">
-                                8355_环境工程(与中国科学院大学联合培养)
-                              </option>
-                              <option value="3314">
-                                3314_环境工程(专科起点本科)
-                              </option>
-                              <option value="1371">
-                                1371_环境工程（国际课程实验班）
-                              </option>
-                              <option value="8309">
-                                8309_环境工程（中外合作办学）
-                              </option>
-                              <option value="1304">1304_环境科学</option>
-                              <option value="8354">
-                                8354_环境科学(与中国科学院大学联合培养)
-                              </option>
-                              <option value="3315">
-                                3315_环境科学(专科起点本科)
-                              </option>
-                              <option value="3613">
-                                3613_环境科学与工程(联培)
-                              </option>
-                              <option value="8328">
-                                8328_环境科学与工程类
-                              </option>
-                              <option value="8379">8379_环境设计</option>
-                              <option value="8338">8338_环境生态工程</option>
-                              <option value="8331">
-                                8331_环境生态类（与中国科学院大学联合培养）
-                              </option>
-                              <option value="1312">1312_会计学</option>
-                              <option value="3304">
-                                3304_会计学(专科起点本科)
-                              </option>
-                              <option value="8324">8324_机器人工程</option>
-                              <option value="8376">8376_机械电子工程</option>
-                              <option value="1308">
-                                1308_计算机科学与技术
-                              </option>
-                              <option value="8373">
-                                8373_计算机科学与技术(第二学位)
-                              </option>
-                              <option value="3617">
-                                3617_计算机科学与技术(联培)
-                              </option>
-                              <option value="8384">
-                                8384_计算机科学与技术(腾讯实验班)
-                              </option>
-                              <option value="3305">
-                                3305_计算机科学与技术(专科起点本科)
-                              </option>
-                              <option value="8303">
-                                8303_计算机科学与技术（嵌入式培养）
-                              </option>
-                              <option value="8344">
-                                8344_计算机科学与技术（师范）
-                              </option>
-                              <option value="8329">8329_计算机类</option>
-                              <option value="8319">
-                                8319_计算机软件实验班
-                              </option>
-                              <option value="1363">1363_金融工程</option>
-                              <option value="3604">3604_金融工程(联培)</option>
-                              <option value="3306">
-                                3306_金融工程(专科起点本科)
-                              </option>
-                              <option value="8320">8320_经济管理实验班</option>
-                              <option value="8339">8339_经济统计学</option>
-                              <option value="1345">
-                                1345_雷电防护科学与技术
-                              </option>
-                              <option value="8380">8380_美术学(师范)</option>
-                              <option value="1342">1342_农业资源与环境</option>
-                              <option value="8352">
-                                8352_农业资源与环境(与中国科学院大学联合培养)
-                              </option>
-                              <option value="8382">8382_气象技术与工程</option>
-                              <option value="8346">8346_人工智能</option>
-                              <option value="1332">1332_人力资源管理</option>
-                              <option value="1394">
-                                1394_人文地理与城乡规划
-                              </option>
-                              <option value="8349">
-                                8349_人文地理与城乡规划(与中国科学院大学联合培养)
-                              </option>
-                              <option value="1322">1322_日语</option>
-                              <option value="1344">1344_软件工程</option>
-                              <option value="3618">3618_软件工程(联培)</option>
-                              <option value="3307">
-                                3307_软件工程(专科起点本科)
-                              </option>
-                              <option value="1358">
-                                1358_软件工程（动画方向）
-                              </option>
-                              <option value="1366">
-                                1366_软件工程（国际课程实验班）
-                              </option>
-                              <option value="1398">
-                                1398_软件工程（嵌入式培养）
-                              </option>
-                              <option selected="selected" value="8302">
-                                8302_软件工程（中外合作办学）
-                              </option>
-                              <option value="8308">
-                                8308_软件工程（专转本）
-                              </option>
-                              <option value="1317">1317_生态学</option>
-                              <option value="8353">
-                                8353_生态学(与中国科学院大学联合培养)
-                              </option>
-                              <option value="1333">1333_市场营销</option>
-                              <option value="3603">3603_市场营销(联培)</option>
-                              <option value="8325">
-                                8325_数据科学与大数据技术
-                              </option>
-                              <option value="3607">
-                                3607_数据科学与大数据技术(联培)
-                              </option>
-                              <option value="8371">
-                                8371_数据科学与大数据技术(中外合作办学)
-                              </option>
-                              <option value="8337">
-                                8337_数据科学与大数据技术（嵌入式培养）
-                              </option>
-                              <option value="6971">
-                                6971_数据科学与大数据技术（中外合作办学联培）
-                              </option>
-                              <option value="1323">1323_数学与应用数学</option>
-                              <option value="8342">
-                                8342_数学与应用数学（师范）
-                              </option>
-                              <option value="8310">
-                                8310_数学与应用数学（中外合作办学）
-                              </option>
-                              <option value="1379">1379_数字媒体艺术</option>
-                              <option value="1381">
-                                1381_数字媒体艺术（国际课程实验班）
-                              </option>
-                              <option value="1369">
-                                1369_数字媒体艺术（网络与媒体方向）
-                              </option>
-                              <option value="1370">
-                                1370_数字媒体艺术（游戏艺术设计方向）
-                              </option>
-                              <option value="1383">
-                                1383_数字媒体艺术（中外合作办学）
-                              </option>
-                              <option value="8377">8377_水利科学与工程</option>
-                              <option value="8323">
-                                8323_水文与水资源工程
-                              </option>
-                              <option value="3316">
-                                3316_水文与水资源工程(专科起点本科)
-                              </option>
-                              <option value="1334">1334_通信工程</option>
-                              <option value="8383">
-                                8383_通信工程(华为实验班)
-                              </option>
-                              <option value="8364">
-                                8364_通信工程(与中国科学院大学联合培养)
-                              </option>
-                              <option value="3308">
-                                3308_通信工程(专科起点本科)
-                              </option>
-                              <option value="1315">1315_统计学</option>
-                              <option value="1346">1346_网络工程</option>
-                              <option value="3614">3614_网络工程(联培)</option>
-                              <option value="3309">
-                                3309_网络工程(专科起点本科)
-                              </option>
-                              <option value="8315">
-                                8315_网络工程（嵌入式培养）
-                              </option>
-                              <option value="8347">
-                                8347_微电子科学与工程
-                              </option>
-                              <option value="3608">
-                                3608_微电子科学与工程(联培)
-                              </option>
-                              <option value="1306">1306_物理学</option>
-                              <option value="8343">8343_物理学（师范）</option>
-                              <option value="1375">1375_物联网工程</option>
-                              <option value="3615">
-                                3615_物联网工程(联培)
-                              </option>
-                              <option value="3310">
-                                3310_物联网工程(专科起点本科)
-                              </option>
-                              <option value="8304">
-                                8304_物联网工程（嵌入式培养）
-                              </option>
-                              <option value="1347">1347_物流管理</option>
-                              <option value="2222">2222_新教师培训专业</option>
-                              <option value="8314">8314_信息安全</option>
-                              <option value="3616">3616_信息安全(联培)</option>
-                              <option value="1309">1309_信息工程</option>
-                              <option value="8365">
-                                8365_信息工程(与中国科学院大学联合培养)
-                              </option>
-                              <option value="1324">
-                                1324_信息工程（网络与通信）
-                              </option>
-                              <option value="1325">
-                                1325_信息工程（系统工程方向）
-                              </option>
-                              <option value="1307">
-                                1307_信息管理与信息系统
-                              </option>
-                              <option value="8321">
-                                8321_信息管理与信息系统（嵌入式培养）
-                              </option>
-                              <option value="8318">8318_信息控制实验班</option>
-                              <option value="1314">1314_信息与计算科学</option>
-                              <option value="1378">
-                                1378_信息与计算科学（国际课程实验班）
-                              </option>
-                              <option value="8316">
-                                8316_信息与计算科学（嵌入式培养）
-                              </option>
-                              <option value="1311">1311_行政管理</option>
-                              <option value="0000">0000_休学</option>
-                              <option value="1335">1335_遥感科学与技术</option>
-                              <option value="8366">
-                                8366_遥感科学与技术(国际实验班)
-                              </option>
-                              <option value="8350">
-                                8350_遥感科学与技术(与中国科学院大学联合培养)
-                              </option>
-                              <option value="3313">
-                                3313_遥感科学与技术(专科起点本科)
-                              </option>
-                              <option value="1396">1396_艺术与科技</option>
-                              <option value="1310">1310_英语</option>
-                              <option value="1351">
-                                1351_英语（国际商务方向）
-                              </option>
-                              <option value="8341">8341_英语（师范）</option>
-                              <option value="1352">
-                                1352_英语（实用翻译方向）
-                              </option>
-                              <option value="1337">1337_应用化学</option>
-                              <option value="3619">3619_应用化学(联培)</option>
-                              <option value="1377">
-                                1377_应用化学（中外合作办学）
-                              </option>
-                              <option value="8305">
-                                8305_应用化学（中外合作办学）
-                              </option>
-                              <option value="1302">1302_应用气象学</option>
-                              <option value="8361">
-                                8361_应用气象学(公共气象)
-                              </option>
-                              <option value="1391">
-                                1391_应用气象学（公共气象服务方向）
-                              </option>
-                              <option value="1387">1387_应用统计学</option>
-                              <option value="1326">1326_应用物理学</option>
-                              <option value="1111">1111_重新学习专业</option>
-                              <option value="1303">
-                                1303_资源环境与城乡规划管理
-                              </option>
-                              <option value="1327">
-                                1327_资源环境与城乡规划管理（海洋滩涂）
-                              </option>
-                              <option value="1336">1336_自动化</option>
-                              <option value="3311">
-                                3311_自动化(专科起点本科)
-                              </option>
-                              <option value="8313">
-                                8313_自动化（专转本）
-                              </option>
-                              <option value="1390">
-                                1390_自然地理与资源环境
-                              </option>
-                              <option value="8351">
-                                8351_自然地理与资源环境(与中国科学院大学联合培养)
-                              </option>
-                              <option value=" "></option>
-                            </select>
-                          </td>
-                          <td style="width: 60px" class="personaddbg1">年级</td>
-                          <td style="width: 100px" bgcolor="#ffffff">
-                            <select
-                              name="StudentJZ1$DropDownListDQSZJ"
-                              onchange="javascript:setTimeout('__doPostBack(\'StudentJZ1$DropDownListDQSZJ\',\'\')', 0)"
-                              id="StudentJZ1_DropDownListDQSZJ"
-                              style="width: 100px"
-                            >
-                              <option value="2018">2018</option>
-                              <option value="2016">2016</option>
-                              <option value="2014">2014</option>
-                              <option value="2017">2017</option>
-                              <option value="2010">2010</option>
-                              <option value="2011">2011</option>
-                              <option value="2002">2002</option>
-                              <option value="2013">2013</option>
-                              <option value="2004">2004</option>
-                              <option value="2005">2005</option>
-                              <option value="2006">2006</option>
-                              <option value="2007">2007</option>
-                              <option value="2008">2008</option>
-                              <option value="2009">2009</option>
-                              <option value="2012">2012</option>
-                              <option value="2015">2015</option>
-                              <option selected="selected" value="2020">
-                                2020
-                              </option>
-                              <option value="2021">2021</option>
-                              <option value="2019">2019</option>
-                              <option value=" "></option>
-                            </select>
-                          </td>
-                          <td style="width: 60px" class="personaddbg1">班级</td>
-                          <td style="width: 100px" bgcolor="#ffffff">
-                            <select
-                              name="StudentJZ1$DropDownListXZB"
-                              onchange="javascript:setTimeout('__doPostBack(\'StudentJZ1$DropDownListXZB\',\'\')', 0)"
-                              id="StudentJZ1_DropDownListXZB"
-                              style="width: 150px"
-                            >
-                              <option value="软工合作20(2)班">
-                                软工合作20(2)班
-                              </option>
-                              <option
-                                selected="selected"
-                                value="软工合作20(1)班"
-                              >
-                                软工合作20(1)班
-                              </option>
-                              <option value=" "></option>
-                            </select>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="personaddbg1">学年</td>
-                <td class="trbg2" height="27" bgcolor="#ffffff">
-                  <select
-                    name="XN1$DropDownListXN"
-                    id="XN1_DropDownListXN"
-                    style="width: 110px"
-                  >
-                    <option value="2005-2006">2005-2006</option>
-                    <option value="2006-2007">2006-2007</option>
-                    <option value="2007-2008">2007-2008</option>
-                    <option value="2008-2009">2008-2009</option>
-                    <option value="2009-2010">2009-2010</option>
-                    <option value="2010-2011">2010-2011</option>
-                    <option value="2011-2012">2011-2012</option>
-                    <option value="2012-2013">2012-2013</option>
-                    <option value="2013-2014">2013-2014</option>
-                    <option value="2014-2015">2014-2015</option>
-                    <option value="2015-2016">2015-2016</option>
-                    <option value="2016-2017">2016-2017</option>
-                    <option value="2017-2018">2017-2018</option>
-                    <option value="2018-2019">2018-2019</option>
-                    <option value="2019-2020">2019-2020</option>
-                    <option selected="selected" value="2020-2021">
-                      2020-2021
-                    </option>
-                    <option value="2021-2022">2021-2022</option>
-                    <option value="2022-2023">2022-2023</option>
-                    <option value=" "></option>
-                  </select>
-                </td>
-                <td class="personaddbg1" height="27" bgcolor="#ffffff">学期</td>
-                <td class="trbg2" height="27" bgcolor="#ffffff">
-                  <select
-                    name="XQ1$DropDownListXQ"
-                    id="XQ1_DropDownListXQ"
-                    style="width: 74px"
-                  >
-                    <option selected="selected" value="1">1</option>
-                    <option value="2">2</option>
-                    <option value=" "></option>
-                  </select>
-                </td>
-                <td
-                  class="personaddbg1"
-                  colspan="3"
-                  height="27"
-                  bgcolor="#ffffff"
-                >
-                  <input
-                    type="submit"
-                    name="Button1"
-                    value="查询"
-                    id="Button1"
-                    style="width: 72px"
-                  />
-                  <input
-                    type="submit"
-                    name="ButtonList"
-                    value="班级列表模式"
-                    id="ButtonList"
-                  />
-                  <input
-                    type="submit"
-                    name="btnExport"
-                    value="课表输出"
-                    id="btnExport"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <p>&nbsp;</p>
-          <table
-            id="TABLE1"
-            width="100%"
-            height="697"
-            cellspacing="1"
-            cellpadding="0"
-            border="1"
-            bgcolor="dfdfdf"
-            align="center"
-          >
-            <tbody>
-              <tr bgcolor="#6699CC">
-                <td width="60" valign="middle" height="40">
-                  <div style="color: #ffffff" align="center">时间</div>
-                </td>
-                <td width="184" valign="middle" align="center">
-                  <span class="STYLE1" style="color: #ffffff">星期一</span>
-                </td>
-                <td valign="middle" align="center">
-                  <span class="STYLE1" style="color: #ffffff">星期二</span>
-                </td>
-                <td valign="middle" align="center">
-                  <span class="STYLE1" style="color: #ffffff">星期三</span>
-                </td>
-                <td valign="middle" align="center">
-                  <span class="STYLE1" style="color: #ffffff">星期四</span>
-                </td>
-                <td valign="middle" align="center">
-                  <span class="STYLE1" style="color: #ffffff">星期五</span>
-                </td>
-                <td valign="middle" align="center">
-                  <span class="STYLE1" style="color: #ffffff">星期六</span>
-                </td>
-                <td valign="middle" align="center">
-                  <span class="STYLE1" style="color: #ffffff">星期日</span>
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="personaddbg1"
-                  width="60"
-                  valign="middle"
-                  bgcolor="#E9F1F3"
-                  align="center"
-                >
-                  <p>上午</p>
-                  <p>1~2节</p>
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  高等数学Ⅰ（1）◇顾文亚(4-18)(软工合作20(1)班;机器人20(2)班;机器人20(1)班;)◇阅江楼222◇多媒体教室◇{12节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  通用英语（1）◇大外部()◇{12节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  思想道德修养与法律基础◇李浩(4-18)(软工合作20(1)班;汉语言(师范)20(1)班;应数(师范)20(1)班;)◇滨江BN304◇多媒体教室◇{12节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="personaddbg1"
-                  width="60"
-                  valign="middle"
-                  bgcolor="#E9F1F3"
-                  align="center"
-                >
-                  <p>上午</p>
-                  <p>3~4节</p>
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  程序设计基础◇廖灵芝(4-18)(软工合作20(2)班;软工合作20(1)班;)◇揽江楼C204◇多媒体教室◇{34节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  计算机基础◇Hiuk Jae
-                  Shim（沈爀在）(4-18)(软工合作20(2)班;软工合作20(1)班;)◇揽江楼C204◇多媒体教室◇{34节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  高等数学Ⅰ（1）◇顾文亚(4-18)(软工合作20(1)班;机器人20(2)班;机器人20(1)班;)◇阅江楼222◇多媒体教室◇{34节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  计算机基础◇Hiuk Jae
-                  Shim（沈爀在）(4-18)(软工合作20(2)班;软工合作20(1)班;)◇揽江楼C204◇多媒体教室◇单周{34节}◆程序设计基础◇廖灵芝
-                  (4-18)(软工合作20(2)班;软工合作20(1)班;)◇揽江楼C204◇多媒体教室◇双周{34节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  高等数学Ⅰ（1）◇顾文亚(4-18)(软工合作20(1)班;机器人20(2)班;机器人20(1)班;)◇阅江楼222◇多媒体教室◇{34节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="personaddbg1"
-                  width="60"
-                  valign="middle"
-                  bgcolor="#E9F1F3"
-                  align="center"
-                >
-                  <p>下午</p>
-                  <p>5~6节</p>
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  思想道德修养与法律基础◇李浩(4-18)(软工合作20(1)班;汉语言(师范)20(1)班;应数(师范)20(1)班;)◇滨江BN304◇多媒体教室◇双周{56节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  通用英语（1）◇大外部()◇{56节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="personaddbg1"
-                  width="60"
-                  valign="middle"
-                  bgcolor="#E9F1F3"
-                  align="center"
-                >
-                  <p>下午</p>
-                  <p>7~8节</p>
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  Web程序设计◇王海彬(4-18)(软工合作20(2)班;软工合作20(1)班;)◇揽江楼N509◇多媒体教室◇{78节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  体育（1）◇体育部()◇{78节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="personaddbg1"
-                  width="60"
-                  valign="middle"
-                  bgcolor="#E9F1F3"
-                  align="center"
-                >
-                  <p>晚上</p>
-                  <p>9~10节</p>
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  职业生涯规划◇黄鹏年(7-11)(软工合作20(1)班;环境生态20(1)班;给排水20(1)班;)◇揽江楼N203◇多媒体教室◇{910节}
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-                <td width="184" valign="top" bgcolor="#FFFFFF" align="left">
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td
-                  class="personaddbg1"
-                  style="height: 64px"
-                  width="60"
-                  valign="middle"
-                  bgcolor="#E9F1F3"
-                  align="center"
-                >
-                  晚上<br />
-                  11~12节
-                </td>
-                <td
-                  style="height: 64px"
-                  width="184"
-                  valign="top"
-                  bgcolor="#FFFFFF"
-                  align="left"
-                >
-                  &nbsp;
-                </td>
-                <td
-                  style="height: 64px"
-                  width="184"
-                  valign="top"
-                  bgcolor="#FFFFFF"
-                  align="left"
-                >
-                  &nbsp;
-                </td>
-                <td
-                  style="height: 64px"
-                  width="184"
-                  valign="top"
-                  bgcolor="#FFFFFF"
-                  align="left"
-                >
-                  &nbsp;
-                </td>
-                <td
-                  style="height: 64px"
-                  width="184"
-                  valign="top"
-                  bgcolor="#FFFFFF"
-                  align="left"
-                >
-                  &nbsp;
-                </td>
-                <td
-                  style="height: 64px"
-                  width="184"
-                  valign="top"
-                  bgcolor="#FFFFFF"
-                  align="left"
-                >
-                  &nbsp;
-                </td>
-                <td
-                  style="height: 64px"
-                  width="184"
-                  valign="top"
-                  bgcolor="#FFFFFF"
-                  align="left"
-                >
-                  &nbsp;
-                </td>
-                <td
-                  style="height: 64px"
-                  width="184"
-                  valign="top"
-                  bgcolor="#FFFFFF"
-                  align="left"
-                >
-                  &nbsp;
-                </td>
-              </tr>
-              <tr>
-                <td colspan="8" height="37" bgcolor="#FFFFFF">&nbsp; 备注:</td>
-              </tr>
-            </tbody>
-          </table>
+      <div class="mtt_arrange_item" style="background-color: #ffeacc">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          大学物理Ⅱ（2）[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">王祖松</div>
+          </div>
+          <div class="mtt_item_room">1-16周,星期1,第1节-第2节,阅江楼112</div>
+          <div class="mtt_item_class" title="22计科腾讯1班,22信息安全奇安信1班">
+            22计科腾讯1班,22信息安全...
+          </div>
         </div>
       </div>
-      <br />
-      <pagerstyle cssclass="dg_page">
-        <br />
-        <br />
-      </pagerstyle>
-    </form>
-  </body>
-  <script src="provider.js"></script>
-</html>
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期1,08:00-09:40,长望楼202</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">18周,星期1,08:00-09:40,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="2"
+      data-begin-unit="1"
+      data-end-unit="2"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期2,08:00-09:40,长望楼202</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期2,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">17周,星期2,08:00-09:40,长望楼204</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">18周,星期2,08:00-09:40,长望楼204</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="3"
+      data-begin-unit="1"
+      data-end-unit="2"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期3,08:00-09:40,长望楼202</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="4"
+      data-begin-unit="1"
+      data-end-unit="2"
+      rowspan="2"
+      class="highLight"
+    >
+      <div class="mtt_arrange_item" style="background-color: #cceae7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          离散数学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高骏强</div>
+          </div>
+          <div class="mtt_item_room">1-16周,星期4,第1节-第2节,滨江BN304</div>
+          <div
+            class="mtt_item_class"
+            title="22人工智能1班,22人工智能2班,22人工智能3班"
+          >
+            22人工智能1班,22人工智能...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">18周,星期4,08:00-09:40,信科楼615-616</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期4,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="5"
+      data-begin-unit="1"
+      data-end-unit="2"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">付章杰,闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">
+            1-3周,5-7周,9-15周(单),星期5,第1节-第2节,揽江楼N413
+          </div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期5,08:00-09:40,长望楼402</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">4周,星期5,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">16周,星期5,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">14周,星期5,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">10周,星期5,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">8周,星期5,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">12周,星期5,08:00-09:40,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="6"
+      data-begin-unit="1"
+      data-end-unit="2"
+      rowspan="2"
+    ></td>
+    <td
+      data-role="item"
+      data-week="7"
+      data-begin-unit="1"
+      data-end-unit="2"
+      rowspan="2"
+    ></td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="2">第2节<br />08:55~09:40</td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="3">第3节<br />10:10~10:55</td>
+    <td
+      data-role="item"
+      data-week="1"
+      data-begin-unit="3"
+      data-end-unit="4"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">7周,星期1,第3节-第4节,揽江楼N413</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期1,10:10-11:50,长望楼402</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">18周,星期1,10:10-11:50,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="2"
+      data-begin-unit="3"
+      data-end-unit="4"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #fff0cc">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          操作系统Ⅰ[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">赵晓平</div>
+          </div>
+          <div class="mtt_item_room">1-16周,星期2,第3节-第4节,揽江楼N413</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期2,10:10-11:50,长望楼202</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期2,10:10-11:50,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">18周,星期2,10:10-11:50,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">17周,星期2,10:10-11:50,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="3"
+      data-begin-unit="3"
+      data-end-unit="4"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">
+            1-4周,6-10周,15-16周,星期3,第3节-第4节,揽江楼N413
+          </div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期3,10:10-11:50,长望楼202</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">11周,星期3,10:10-11:50,信科楼609-610</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">12周,星期3,10:10-11:50,信科楼609-610</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">14周,星期3,10:10-11:50,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">13周,星期3,10:10-11:50,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="4"
+      data-begin-unit="3"
+      data-end-unit="4"
+      rowspan="2"
+      class="highLight"
+    >
+      <div class="mtt_arrange_item" style="background-color: #fff0cc">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          操作系统Ⅰ[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">赵晓平</div>
+          </div>
+          <div class="mtt_item_room">1-16周,星期4,第3节-第4节,揽江楼N413</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">18周,星期4,10:10-11:50,信科楼615-616</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期4,10:10-11:50,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="5"
+      data-begin-unit="3"
+      data-end-unit="4"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">1-16周,星期5,第3节-第4节,明德N208</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #f9d9d6">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          安全编程应用实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">张成军</div>
+          </div>
+          <div class="mtt_item_room">18周,星期5,10:10-11:50,长望楼402</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">16周,星期5,10:10-11:50,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="6"
+      data-begin-unit="3"
+      data-end-unit="4"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #ffddd3">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          大学物理实验Ⅱ[41]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">赵德林</div>
+          </div>
+          <div class="mtt_item_room">
+            1-16周,星期6,第3节-第4节,藕舫楼208-210
+          </div>
+          <div class="mtt_item_class" title="22信息安全奇安信1班">
+            22信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="7"
+      data-begin-unit="3"
+      data-end-unit="4"
+      rowspan="2"
+    ></td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="4">第4节<br />11:05~11:50</td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="5">第5节<br />13:45~14:30</td>
+    <td
+      data-role="item"
+      data-week="1"
+      data-begin-unit="5"
+      data-end-unit="6"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #e8f3db">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据挖掘与安全[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">付章杰,闫雷鸣</div>
+          </div>
+          <div class="mtt_item_room">
+            2-16周(双),星期1,第5节-第6节,信科楼B111
+          </div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">18周,星期1,13:45-15:25,信科楼615-616</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期1,13:45-15:25,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="2"
+      data-begin-unit="5"
+      data-end-unit="6"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #cceae7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          离散数学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高骏强</div>
+          </div>
+          <div class="mtt_item_room">
+            1-15周(单),星期2,第5节-第6节,滨江BN504
+          </div>
+          <div
+            class="mtt_item_class"
+            title="22人工智能1班,22人工智能2班,22人工智能3班"
+          >
+            22人工智能1班,22人工智能...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">18周,星期2,13:45-15:25,信科楼615-616</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="3"
+      data-begin-unit="5"
+      data-end-unit="6"
+      rowspan="2"
+    ></td>
+    <td
+      data-role="item"
+      data-week="4"
+      data-begin-unit="5"
+      data-end-unit="6"
+      rowspan="2"
+      class="highLight"
+    >
+      <div class="mtt_arrange_item" style="background-color: #d3f4f8">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          毛泽东思想和中国特色社会主义理论体系概论[09]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郭翔</div>
+          </div>
+          <div class="mtt_item_room">1-16周,星期4,第5节-第6节,揽江楼C201</div>
+          <div
+            class="mtt_item_class"
+            title="计科21(4)班,计科21(5)班,计科21(6)班,21信息安全奇安信1班"
+          >
+            计科21(4)班,计科21(5...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期4,13:45-15:25,信科楼609-610</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">17周,星期4,13:45-15:25,长望楼204</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="5"
+      data-begin-unit="5"
+      data-end-unit="6"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期5,13:45-15:25,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="6"
+      data-begin-unit="5"
+      data-end-unit="6"
+      rowspan="2"
+    ></td>
+    <td
+      data-role="item"
+      data-week="7"
+      data-begin-unit="5"
+      data-end-unit="6"
+      rowspan="2"
+    ></td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="6">第6节<br />14:40~15:25</td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="7">第7节<br />15:55~16:40</td>
+    <td
+      data-role="item"
+      data-week="1"
+      data-begin-unit="7"
+      data-end-unit="8"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #d9f2d9">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          近世代数Ⅱ[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">陈先意</div>
+          </div>
+          <div class="mtt_item_room">
+            1-4周,6-8周,10-16周,星期1,第7节-第8节,明德N409
+          </div>
+          <div class="mtt_item_class" title="22信息安全1班,22信息安全2班">
+            22信息安全1班,22信息安全...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">18周,星期1,15:55-17:35,信科楼615-616</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期1,15:55-17:35,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="2"
+      data-begin-unit="7"
+      data-end-unit="8"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">
+            2-10周(双),16周,星期2,第7节-第8节,揽江楼N413
+          </div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">12周,星期2,15:55-17:35,信科楼609-610</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #d3eafd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">14周,星期2,15:55-17:35,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">18周,星期2,15:55-17:35,信科楼615-616</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="3"
+      data-begin-unit="7"
+      data-end-unit="8"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">1-16周,星期3,第7节-第8节,明德N208</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">4周,星期3,15:55-17:35,长望楼204</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">15周,星期3,15:55-17:35,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">5周,星期3,15:55-17:35,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">9周,星期3,15:55-17:35,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">7周,星期3,15:55-17:35,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">13周,星期3,15:55-17:35,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构Ⅰ[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">11周,星期3,15:55-17:35,长望楼206</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="4"
+      data-begin-unit="7"
+      data-end-unit="8"
+      rowspan="2"
+      class="highLight"
+    >
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">
+            1-11周(单),星期4,第7节-第8节,揽江楼S207
+          </div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #fff5d7">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          信息内容安全实践[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期4,15:55-17:35,信科楼609-610</div>
+          <div
+            class="mtt_item_class"
+            title="21信息安全奇安信1班,信息安全21(2)班,信息安全21(1)班"
+          >
+            21信息安全奇安信1班,信息安...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">15周,星期4,15:55-17:35,信科楼D404-405</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">13周,星期4,15:55-17:35,信科楼D406-407</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #e8e0eb">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          数据结构课程设计[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郑玉</div>
+          </div>
+          <div class="mtt_item_room">17周,星期4,15:55-17:35,长望楼204</div>
+          <div class="mtt_item_class" title="22软件工程3班,22软件工程4班">
+            22软件工程3班,22软件工程...
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="5"
+      data-begin-unit="7"
+      data-end-unit="8"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item" style="background-color: #d3f4f8">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          毛泽东思想和中国特色社会主义理论体系概论[09]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">郭翔</div>
+          </div>
+          <div class="mtt_item_room">
+            1-15周(单),星期5,第7节-第8节,揽江楼C201
+          </div>
+          <div
+            class="mtt_item_class"
+            title="计科21(4)班,计科21(5)班,计科21(6)班,21信息安全奇安信1班"
+          >
+            计科21(4)班,计科21(5...
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item" style="background-color: #dbeefd">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          密码编码学综合实践[02]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">高光勇</div>
+          </div>
+          <div class="mtt_item_room">17周,星期5,15:55-17:35,信科楼615-616</div>
+          <div class="mtt_item_class" title="21信息安全奇安信1班">
+            21信息安全奇安信1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="6"
+      data-begin-unit="7"
+      data-end-unit="8"
+      rowspan="2"
+    ></td>
+    <td
+      data-role="item"
+      data-week="7"
+      data-begin-unit="7"
+      data-end-unit="8"
+      rowspan="2"
+    ></td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="8">第8节<br />16:50~17:35</td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="9">第9节<br />18:45~19:30</td>
+    <td
+      data-role="item"
+      data-week="1"
+      data-begin-unit="9"
+      data-end-unit="10"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">1-13周,星期1,第9节-第10节,揽江楼N508</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">16周,星期1,18:45-20:25,信科楼D404-405</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">15周,星期1,18:45-20:25,信科楼D404-405</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">14周,星期1,18:45-20:25,信科楼D404-405</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="2"
+      data-begin-unit="9"
+      data-end-unit="10"
+      rowspan="2"
+    ></td>
+    <td
+      data-role="item"
+      data-week="3"
+      data-begin-unit="9"
+      data-end-unit="10"
+      rowspan="2"
+    >
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">1-13周,星期3,第9节-第10节,滨江BS217</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">14周,星期3,18:45-20:25,信科楼D406-407</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">15周,星期3,18:45-20:25,信科楼D406-407</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+      <div class="mtt_arrange_item">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          电子技术基础Ⅰ[06]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">庞亚伟</div>
+          </div>
+          <div class="mtt_item_room">16周,星期3,18:45-20:25,信科楼D406-407</div>
+          <div class="mtt_item_class" title="22计科(师范)1班">
+            22计科(师范)1班
+          </div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="4"
+      data-begin-unit="9"
+      data-end-unit="10"
+      rowspan="2"
+      class="highLight"
+    >
+      <div class="mtt_arrange_item" style="background-color: #d8dcf0">
+        <div class="mtt_item_tzkcicon"></div>
+        <div class="mtt_item_kcmc">
+          职业发展心理学[01]
+          <div class="bh-clearfix jsrs-cont">
+            <div class="mtt_item_jxbmc bh-pull-left">蒋莹</div>
+          </div>
+          <div class="mtt_item_room">2-17周,星期4,第9节-第10节,明德N415</div>
+        </div>
+      </div>
+    </td>
+    <td
+      data-role="item"
+      data-week="5"
+      data-begin-unit="9"
+      data-end-unit="10"
+      rowspan="2"
+    ></td>
+    <td
+      data-role="item"
+      data-week="6"
+      data-begin-unit="9"
+      data-end-unit="10"
+      rowspan="2"
+    ></td>
+    <td
+      data-role="item"
+      data-week="7"
+      data-begin-unit="9"
+      data-end-unit="10"
+      rowspan="2"
+    ></td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="10">第10节<br />19:40~20:25</td>
+  </tr>
+  <tr>
+    <td class="mtt_bgcolor_grey" data-unit="11">第11节<br />20:35~21:20</td>
+  </tr>
+</tbody>
