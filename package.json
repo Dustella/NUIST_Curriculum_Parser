@@ -1,9 +1,13 @@
 {
-  "dependencies": {
-    "@types/node": "^20.8.9",
-    "cheerio": "^1.0.0-rc.10",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.2.2"
+  "name": "miai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --filter ./localTools start",
+    "prepare": "pnpm --filter ./localTools install"
   },
-  "type": "commonjs"
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0-or-later"
 }
