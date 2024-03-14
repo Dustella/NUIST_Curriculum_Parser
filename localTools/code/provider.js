@@ -106,7 +106,12 @@ async function scheduleHtmlProvider(
       const name = KCM;
       const position = JASMC ?? "无地点"; // 上课地点
       const teacher = SKJS ?? "无老师"; // 老师
-      const weeks = fromZCtoWeeks(ZCMC); // 周数
+      const weeks =
+        ZCMC.indexOf(",") === -1
+          ? fromZCtoWeeks(ZCMC)
+          : ZCMC.split(",")
+              .map((item) => fromZCtoWeeks(item))
+              .flat(); // 周数
       const day = SKXQ; // 星期几
       const sections = [parseInt(KSJC, 10), parseInt(JSJC, 10)]; // 开始节次和结束节次
       const isExperiement = SFSYK === "1"; // 是否实验课
